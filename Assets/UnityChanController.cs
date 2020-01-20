@@ -87,8 +87,6 @@ public class UnityChanController : MonoBehaviour {
                         this.isEnd = true;
 
                         this.stateText.GetComponent<Text>().text = "GAME OVER";
-
-                        Destroy (other.gameObject);
                 }
 
                 if (other.gameObject.tag == "GoalTag") {
