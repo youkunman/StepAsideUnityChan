@@ -10,12 +10,13 @@ public class Destroy : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    void OnBecameInvisible(){
-   
-      Destroy(this.gameObject);
+　　　void Update () {
     }
+	
+　　　void OnBecameInvisible(){
+
+　　　　if (!GetComponent<Renderer>().isVisible) {
+    　　Destroy(this.gameObject);
+    　　}
+　　　}
 }
